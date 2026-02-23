@@ -43,6 +43,8 @@ export const ShadowCard = ({ shadow }: { shadow: Shadow }) => {
 
             <div className="absolute bottom-0 left-0 w-full h-full flex flex-col justify-center gap-4 p-4
             opacity-0 group-hover:opacity-100 duration-300 transition-all translate-y-5 group-hover:translate-y-0 bg-neutral-100">
+
+                <div className="flex items-center justify-center text-xl text-accent">{shadow.name}</div>
                 <button className="bg-neutral-200 border border-neutral-300 p-1 rounded-lg flex items-center justify-center"
                     onClick={() => handleCopy(shadow.tailwindCss, "tailwind")}>
                     {(copy && copy.typeCopy === "tailwind") ? (<div className="flex items-center justify-center gap-1">
