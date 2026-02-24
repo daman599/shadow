@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { ShadowShowcase } from "@/components/shadows/shadow-showcase";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       <div className="max-w-4xl mx-auto mt-28">
         <ShadowShowcase />
       </div>
+
+      <Footer />
     </div>
   );
 }
