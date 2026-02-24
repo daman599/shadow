@@ -5,9 +5,9 @@ A curated collection of box, drop and text shadows which are ready to use as Tai
 ## Preview
 
 <p align="center">
-  <img src="./assets/preview1.png" width="600" />
+  <img src="./public/preview1.png" width="600" />
   <br/><br/>
-  <img src="./assets/preview2.png" width="600" />
+  <img src="./public/preview2.png" width="600" />
 </p>
 
 ## Features
