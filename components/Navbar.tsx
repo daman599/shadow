@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 export const Navbar = () => {
     return (
-        <nav className="px-3 py-2 md:p-4 flex items-center justify-between ">
+        <nav className="px-3 py-2 md:p-4 md:pt-6 flex items-center justify-evenly ">
             <motion.div initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}

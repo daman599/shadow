@@ -26,7 +26,8 @@ export const ShadowCard = ({ shadow }: { shadow: Shadow }) => {
         <div className={`${shadow.category === "box" && shadow.tailwindCss} ${shadow.style && shadow.style} 
         overflow-hidden relative size-52 lg:size-62 flex items-center justify-center group`}>
 
-            {shadow.category !== "drop" && <span className={`${shadow.category === "text" && shadow.tailwindCss} text-xl group-hover:opacity-0 opacity-100 duration-75 transition-opacity`}>
+            {shadow.category !== "drop" && <span className={`${shadow.category === "text" && shadow.tailwindCss}
+            text-xl group-hover:opacity-0 opacity-100 duration-75 transition-opacity`}>
                 {shadow.category === "box" ? "Box Shadow" : "Text Shadow"}
             </span>}
 
@@ -45,7 +46,8 @@ export const ShadowCard = ({ shadow }: { shadow: Shadow }) => {
 
                 <div className="flex items-center justify-center font-semibold text-lg text-center text-accent">{shadow.name}</div>
 
-                <button className="border border-neutral-300 hover:bg-neutral-200  transition-al duration-300 text-secondary p-1 rounded-lg flex items-center justify-center"
+                <button className="border border-neutral-300 hover:bg-neutral-200  transition-al duration-300 text-secondary p-1 rounded-lg
+                flex items-center justify-center cursor-pointer"
                     onClick={() => handleCopy(shadow.tailwindCss, "tailwind")}>
                     {(copy && copy.typeCopy === "tailwind") ? (<div className="flex items-center justify-center gap-1">
                         <Check />
@@ -53,7 +55,8 @@ export const ShadowCard = ({ shadow }: { shadow: Shadow }) => {
                     </div>) : "Copy Tailwind"}
                 </button>
 
-                <button className=" border border-neutral-300 p-1 text-secondary hover:bg-neutral-200 transition-al duration-300 rounded-lg flex items-center justify-center"
+                <button className=" border border-neutral-300 p-1 text-secondary hover:bg-neutral-200 transition-al duration-300 rounded-lg
+                flex items-center justify-center cursor-pointer"
                     onClick={() => handleCopy(shadow.vanillaCss, "vanilla")}>
                     {(copy && copy.typeCopy === "vanilla") ? (<div className="flex items-center justify-center gap-1">
                         <Check />
