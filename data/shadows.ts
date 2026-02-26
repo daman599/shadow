@@ -218,11 +218,11 @@ export const Shadows: Shadow[] = [
         style: "border border-neutral-300 rounded-lg"
     },
     {
-        id: "text-subtle-shadow",
+        id: "text-soft-emboss",
         category: "text",
-        name: "Subtle Shadow",
-        vanillaCss: "text-shadow: 1px 1px 2px rgba(0,0,0,0.2);",
-        tailwindCss: "text-shadow-[1px_1px_2px_rgba(0,0,0,0.2)]",
+        name: "Soft Emboss",
+        vanillaCss: "text-shadow: -1px -1px 1px rgba(255,255,255,0.6), 1px 1px 2px rgba(0,0,0,0.3);",
+        tailwindCss: "text-shadow-[-1px_-1px_1px_rgba(255,255,255,0.6),1px_1px_2px_rgba(0,0,0,0.3)]",
         style: "border border-neutral-300 rounded-lg"
     },
     {
@@ -244,7 +244,7 @@ export const Shadows: Shadow[] = [
     {
         id: "text-bold-glow",
         category: "text",
-        name: "Bold Glow",
+        name: "Bold Shadow",
         vanillaCss: "text-shadow: 2px 2px 0px black, 0px 0px 10px rgb(255,240,245)",
         tailwindCss: "text-shadow-[2px_2px_0px_black,0px_0px_10px_rgb(255,240,245)]",
         style: "border border-neutral-300 rounded-lg"
@@ -264,6 +264,126 @@ export const Shadows: Shadow[] = [
         vanillaCss: "text-shadow: 1px 1px 0px red, 2px 2px 0px orange, 3px 3px 0px yellow",
         tailwindCss: "text-shadow-[1px_1px_0px_red,2px_2px_0px_orange,3px_3px_0px_yellow]",
         style: "border border-neutral-300 rounded-lg"
+    },
+    {
+        id: "text-3d-stack-pop",
+        category: "text",
+        name: "3D Stack Pop",
+        vanillaCss: "text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000;",
+        tailwindCss: "text-shadow-[1px_1px_0_#000,2px_2px_0_#000,3px_3px_0_#000]",
+        style: "border border-neutral-300 rounded-lg"
+    },
+    {
+        id: "text-glitch-split",
+        category: "text",
+        name: "Glitch Split",
+        vanillaCss: "text-shadow: -2px 0 #ff004c, 2px 0 #00f7ff;",
+        tailwindCss: "text-shadow-[-2px_0_#ff004c,2px_0_#00f7ff]",
+        style: "border border-neutral-300 rounded-lg"
+    },
+    {
+        id: "text-holographic-glow",
+        category: "text",
+        name: "Holographic Glow",
+        vanillaCss: "text-shadow: 0 0 4px #ffffff, 0 0 10px #00f7ff, 0 0 20px #ff00c8;",
+        tailwindCss: "text-shadow-[0_0_4px_#ffffff,0_0_10px_#00f7ff,0_0_20px_#ff00c8]",
+        style: "border border-neutral-300 rounded-lg"
+    },
+    {
+        id: "text-long-shadow-drift",
+        category: "text",
+        name: "Long Shadow Drift",
+        vanillaCss: "text-shadow: 2px 2px 0 #000000, 4px 4px 0 #000000, 6px 6px 0 #000000, 8px 8px 0 #000000;",
+        tailwindCss: "text-shadow-[2px_2px_0_#000000,4px_4px_0_#000000,6px_6px_0_#000000,8px_8px_0_#000000]",
+        style: "border border-neutral-300 rounded-lg"
+    },
+    {
+        id: "text-inner-light-pop",
+        category: "text",
+        name: "Inner Light Pop",
+        vanillaCss: "text-shadow: 0 -1px 0 rgba(255,255,255,0.8), 0 3px 6px rgba(0,0,0,0.4);",
+        tailwindCss: "text-shadow-[0_-1px_0_rgba(255,255,255,0.8),0_3px_6px_rgba(0,0,0,0.4)]",
+        style: "border border-neutral-300 rounded-lg"
+    },
+    {
+        id: "text-toxic-green-glow",
+        category: "text",
+        name: "Toxic Green Glow",
+        vanillaCss: "text-shadow: 0 0 5px #39ff14, 0 0 15px #39ff14, 0 0 30px #00ff00;",
+        tailwindCss: "text-shadow-[0_0_5px_#39ff14,0_0_15px_#39ff14,0_0_30px_#00ff00]",
+        style: "border border-neutral-300 rounded-lg"
+    },
+    {
+        id: "text-dual-depth-contrast",
+        category: "text",
+        name: "Dual Depth Contrast",
+        vanillaCss: "text-shadow: 1px 1px 0 #000000, -1px -1px 0 #ffffff;",
+        tailwindCss: "text-shadow-[1px_1px_0_#000000,-1px_-1px_0_#ffffff]",
+        style: "border border-neutral-300 rounded-lg"
+    },
+    {
+        id: "text-cinematic-blur-depth",
+        category: "text",
+        name: "Cinematic Blur Depth",
+        vanillaCss: "text-shadow: 0 5px 10px rgba(0,0,0,0.5), 0 15px 25px rgba(0,0,0,0.3);",
+        tailwindCss: "text-shadow-[0_5px_10px_rgba(0,0,0,0.5),0_15px_25px_rgba(0,0,0,0.3)]",
+        style: "border border-neutral-300 rounded-lg"
+    },
+    {
+        id: "text-candy-pop-outline",
+        category: "text",
+        name: "Candy Pop Outline",
+        vanillaCss: "text-shadow: -2px -2px 0 #ff4da6, 2px -2px 0 #ff4da6, -2px 2px 0 #ff4da6, 2px 2px 0 #ff4da6;",
+        tailwindCss: "text-shadow-[-2px_-2px_0_#ff4da6,2px_-2px_0_#ff4da6,-2px_2px_0_#ff4da6,2px_2px_0_#ff4da6]",
+        style: "border border-neutral-300 rounded-lg"
+    },
+    {
+        id: "text-moonlight-fade",
+        category: "text",
+        name: "Moonlight Fade",
+        vanillaCss: "text-shadow: 0 0 8px rgba(173,216,230,0.7), 0 0 20px rgba(135,206,250,0.5);",
+        tailwindCss: "text-shadow-[0_0_8px_rgba(173,216,230,0.7),0_0_20px_rgba(135,206,250,0.5)]",
+        style: "border border-neutral-300 rounded-lg"
+    },
+    {
+        id: "text-paper-cut-depth",
+        category: "text",
+        name: "Paper Cut Depth",
+        vanillaCss: "text-shadow: 1px 1px 0 #d4d4d4, 2px 2px 0 #bfbfbf, 3px 3px 0 #a3a3a3, 4px 4px 0 #737373;",
+        tailwindCss: "text-shadow-[1px_1px_0_#d4d4d4,2px_2px_0_#bfbfbf,3px_3px_0_#a3a3a3,4px_4px_0_#737373]",
+        style: "border border-neutral-300 rounded-lg"
+    },
+    {
+        id: "text-soft-lipstick-outline",
+        category: "text",
+        name: "Soft Lipstick Outline",
+        vanillaCss: "text-shadow: -1px -1px 0 #ff6fa5, 1px -1px 0 #ff6fa5, -1px 1px 0 #ff6fa5, 1px 1px 0 #ff6fa5;",
+        tailwindCss: "text-shadow-[-1px_-1px_0_#ff6fa5,1px_-1px_0_#ff6fa5,-1px_1px_0_#ff6fa5,1px_1px_0_#ff6fa5]",
+        style: "border border-neutral-300 rounded-lg"
+    },
+    {
+        id: "text-modern-layered-offset",
+        category: "text",
+        name: "Modern Layered Offset",
+        vanillaCss: "text-shadow: 1px 1px 0 rgba(0,0,0,0.15), 2px 2px 0 rgba(0,0,0,0.1), 6px 6px 20px rgba(0,0,0,0.08);",
+        tailwindCss: "text-shadow-[1px_1px_0_rgba(0,0,0,0.15),2px_2px_0_rgba(0,0,0,0.1),6px_6px_20px_rgba(0,0,0,0.08)]",
+        style: "border border-neutral-200 rounded-xl"
+    },
+    {
+        id: "text-sharp-editorial-lift",
+        category: "text",
+        name: "Sharp Editorial Lift",
+        vanillaCss: "text-shadow: 0 1px 0 rgba(0,0,0,0.2), 0 12px 30px rgba(0,0,0,0.1);",
+        tailwindCss: "text-shadow-[0_1px_0_rgba(0,0,0,0.2),0_12px_30px_rgba(0,0,0,0.1)]",
+        style: "border border-neutral-200 rounded-xl"
+    },
+    {
+        id: "text-future-soft-stack",
+        category: "text",
+        name: "Future Soft Stack",
+        vanillaCss: "text-shadow: 0 3px 0 rgba(0,0,0,0.12), 0 6px 0 rgba(0,0,0,0.08), 0 20px 40px rgba(0,0,0,0.06);",
+        tailwindCss: "text-shadow-[0_3px_0_rgba(0,0,0,0.12),0_6px_0_rgba(0,0,0,0.08),0_20px_40px_rgba(0,0,0,0.06)]",
+        style: "border border-neutral-200 rounded-xl"
     },
     {
         id: "drop-shadow-soft-black",
