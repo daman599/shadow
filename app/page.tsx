@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="h-screen w-full">
       <div
-        className="h-screen max-[500px]:h-[95vh]"
+        className="min-h-screen"
         // background pattern
         style={{
           backgroundImage: `repeating-linear-gradient(0deg,transparent,transparent 19px,rgba(75, 85, 99, 0.05) 19px,rgba(75, 85, 99, 0.05) 20px,transparent 20px,
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto mt-28 max-[500px]:mt-20 max-[500px]:max-w-full">
+      <div className="max-w-4xl mx-auto mt-20 max-[500px]:mt-10 max-[500px]:max-w-full">
         <ShadowShowcase />
       </div>
 
