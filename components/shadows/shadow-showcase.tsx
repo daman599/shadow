@@ -41,18 +41,18 @@ export const ShadowShowcase = () => {
                 className="flex items-center gap-3 md:gap-5 bg-muted my-5 p-2 rounded-lg"
             >
                 {categories.map((category) => (
-                    <div
-                        key={category}
+                    <div key={category}
                         onClick={() => setActiveTab(category)}
-                        className={`rounded-lg w-full text-center py-2 font-medium text-base tracking-wide transition-all duration-300 cursor-pointer
-                        ${activeTab === category ? "bg-accent/70" : "hover:bg-white"}`}
+                        className={`rounded-lg relative w-full text-center py-2 font-medium text-base tracking-wide hover:bg-white cursor-pointer`}
                     >
-                        {category.charAt(0).toUpperCase() + category.slice(1)}
-                        <span
-                            className={`ml-2 text-sm ${activeTab === category ? "text-black" : "text-secondary"
-                                }`}
-                        >
-                            ({counts[category]})
+                        {activeTab === category &&
+                            <motion.div layoutId="highlight"
+                                className="absolute inset-0 bg-accent/70 rounded-lg"
+                                transition={{ type: "spring", bounce: 0.2 }}
+                            />}
+
+                        <span className={`relative text-xs md:text-sm ${activeTab === category ? "text-black" : "text-secondary"} transition-all duration-300`} >
+                            {category.charAt(0).toUpperCase() + category.slice(1)}  ({counts[category]})
                         </span>
                     </div>
                 ))}
