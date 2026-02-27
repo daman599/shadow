@@ -2,11 +2,12 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { ShadowShowcase } from "@/components/shadows/shadow-showcase";
 import { Footer } from "@/components/Footer";
+import { ReturnToPreview } from "@/components/helper/return-to-preview";
 
 export default function Home() {
   return (
     <div className="h-screen w-full">
-      <div
+      <div id="preview"
         className="min-h-screen"
         // background pattern
         style={{
@@ -28,6 +29,7 @@ export default function Home() {
         </div>
       </div>
 
+      <ReturnToPreview />
       <div className="max-w-4xl mx-auto mt-20 max-[500px]:mt-10 max-[500px]:max-w-full">
         <ShadowShowcase />
       </div>
