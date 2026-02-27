@@ -4,11 +4,7 @@ A curated collection of box, drop and text shadows which are ready to use as Tai
 
 ## Preview
 
-<p align="center">
-  <img src="./public/preview1.png" width="600" />
-  <br/><br/>
-  <img src="./public/preview2.png" width="600" />
-</p>
+<img src="./public/preview.png" alt="Shadow Preview" width="100%" />
 
 ## Features
 
