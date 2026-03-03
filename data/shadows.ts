@@ -2,30 +2,6 @@ import { Shadow } from "@/types/shadow";
 
 export const Shadows: Shadow[] = [
     {
-        id: "box-soft-outline-01",
-        category: "box",
-        name: "Soft Outline",
-        style: "border border-neutral-300",
-        vanillaCss: "boxShadow: 5px 5px 0px 5px rgb(0,0,0)",
-        tailwindCss: "shadow-[0px_0px_2px_2px_rgb(211,211,211)]"
-    },
-    {
-        id: "box-subtle-edge-right-gray",
-        category: "box",
-        name: "Subtle Edge Right",
-        style: "border border-neutral-300",
-        vanillaCss: "boxShadow: 2px 0px 2px 2px rgb(211,211,211)",
-        tailwindCss: "shadow-[2px_0px_2px_2px_rgb(211,211,211)]"
-    },
-    {
-        id: "box-subtle-bottom-right-gray",
-        category: "box",
-        name: "Subtle Bottom Right",
-        style: "border border-neutral-300",
-        vanillaCss: "boxShadow:2px 2px 2px 2px rgb(211,211,211)",
-        tailwindCss: "shadow-[2px_2px_2px_2px_rgb(211,211,211)]"
-    },
-    {
         id: "box-strong-sharp-black",
         category: "box",
         name: "Strong Sharp Black",
@@ -48,6 +24,182 @@ export const Shadows: Shadow[] = [
         style: "border border-black",
         vanillaCss: "box-shadow: 12px 8px 0px 5px rgb(0,0,0)",
         tailwindCss: "shadow-[12px_8px_0px_5px_rgb(0,0,0)]"
+    },
+    {
+        id: "box-offset-frame-cut",
+        category: "box",
+        name: "Frame Cut Offset",
+        style: "border-2 border-black",
+        vanillaCss: "box-shadow: 10px 10px 0px -4px #000;",
+        tailwindCss: "shadow-[10px_10px_0px_-4px_#000]"
+    },
+    {
+        id: "box-offset-glow-stack",
+        category: "box",
+        name: "Offset Glow Stack",
+        style: "border border-black",
+        vanillaCss: "box-shadow: 6px 6px 0px #000, 12px 12px 20px rgba(0,0,0,0.3);",
+        tailwindCss: "shadow-[6px_6px_0px_#000,12px_12px_20px_rgba(0,0,0,0.3)]"
+    },
+    {
+        id: "box-depth-fade-stack",
+        category: "box",
+        name: "Depth Fade Stack",
+        style: "border border-neutral-800",
+        vanillaCss: "box-shadow: 4px 4px 0px rgba(0,0,0,0.8), 8px 8px 0px rgba(0,0,0,0.5), 12px 12px 0px rgba(0,0,0,0.2);",
+        tailwindCss: "shadow-[4px_4px_0px_rgba(0,0,0,0.8),8px_8px_0px_rgba(0,0,0,0.5),12px_12px_0px_rgba(0,0,0,0.2)]"
+    },
+    {
+        id: "box-offset-depth-hard",
+        category: "box",
+        name: "Hard Depth Offset",
+        style: "border border-black",
+        vanillaCss: "box-shadow: 10px 10px 0px #000, 20px 20px 0px rgba(0,0,0,0.2);",
+        tailwindCss: "shadow-[10px_10px_0px_#000,20px_20px_0px_rgba(0,0,0,0.2)]"
+    },
+    {
+        id: "box-offset-pop-outline",
+        category: "box",
+        name: "Pop Outline Offset",
+        style: "border-2 border-black",
+        vanillaCss: "box-shadow: 0 0 0 4px #fff, 10px 10px 0px #000;",
+        tailwindCss: "shadow-[0_0_0_4px_#fff,10px_10px_0px_#000]"
+    },
+    {
+        id: "box-double-side-offset",
+        category: "box",
+        name: "Double Side Offset",
+        style: "border border-black",
+        vanillaCss: "box-shadow: 8px 8px 0px #000, -8px -8px 0px #000;",
+        tailwindCss: "shadow-[8px_8px_0px_#000,-8px_-8px_0px_#000]"
+    },
+    {
+        id: "box-offset-shadow-trail",
+        category: "box",
+        name: "Shadow Trail Illusion",
+        style: "border border-black",
+        vanillaCss: "box-shadow: 2px 2px 0px #000, 4px 4px 0px #000, 6px 6px 0px #000, 8px 8px 0px #000;",
+        tailwindCss: "shadow-[2px_2px_0px_#000,4px_4px_0px_#000,6px_6px_0px_#000,8px_8px_0px_#000]"
+    },
+    {
+        id: "box-offset-multi-layer-illusion",
+        category: "box",
+        name: "Multi Layer Illusion",
+        style: "border border-neutral-900",
+        vanillaCss: "box-shadow: 3px 3px 0px #ccc, 6px 6px 0px #999, 9px 9px 0px #666, 12px 12px 0px #000;",
+        tailwindCss: "shadow-[3px_3px_0px_#ccc,6px_6px_0px_#999,9px_9px_0px_#666,12px_12px_0px_#000]"
+    },
+    {
+        id: "box-long-diagonal-extrude",
+        category: "box",
+        name: "Long Diagonal Extrude",
+        style: "border border-neutral-800",
+        vanillaCss: "box-shadow: 4px 4px 0px #999, 8px 8px 0px #777, 12px 12px 0px #555, 16px 16px 0px #333;",
+        tailwindCss: "shadow-[4px_4px_0px_#999,8px_8px_0px_#777,12px_12px_0px_#555,16px_16px_0px_#333]"
+    },
+    {
+        id: "box-3d-extrude-26",
+        category: "box",
+        name: "3D Extrude Stack",
+        vanillaCss: "box-shadow: 1px 1px 0px #ccc, 2px 2px 0px #bbb, 3px 3px 0px #aaa, 4px 4px 0px #999;",
+        tailwindCss: "shadow-[1px_1px_0px_#ccc,2px_2px_0px_#bbb,3px_3px_0px_#aaa,4px_4px_0px_#999]",
+        style: "border border-neutral-300"
+    },
+    {
+        id: "box-offset-layer-stack",
+        category: "box",
+        name: "Offset Layer Stack",
+        style: "border border-neutral-200",
+        vanillaCss: "box-shadow: 8px 8px 0px #e5e5e5, 16px 16px 0px #d4d4d4;",
+        tailwindCss: "shadow-[8px_8px_0px_#e5e5e5,16px_16px_0px_#d4d4d4]"
+    },
+    {
+        id: "box-dramatic-long-shadow",
+        category: "box",
+        name: "Dramatic Long Shadow",
+        style: "border border-black",
+        vanillaCss: "box-shadow: 20px 20px 0px rgba(0,0,0,0.4);",
+        tailwindCss: "shadow-[20px_20px_0px_rgba(0,0,0,0.4)]"
+    },
+    {
+        id: "box-asymmetric-depth-cut",
+        category: "box",
+        name: "Asymmetric Depth Cut",
+        style: " border border-black",
+        vanillaCss: "box-shadow: inset -8px -8px 15px rgba(0,0,0,0.25), 12px 12px 0px #000;",
+        tailwindCss: "shadow-[inset_-8px_-8px_15px_rgba(0,0,0,0.25),12px_12px_0px_#000]"
+    },
+    {
+        id: "box-neo-brutal-pink",
+        category: "box",
+        name: "Neo Brutal Pink",
+        style: "border-2 border-black",
+        vanillaCss: "box-shadow: 6px 6px 0px #ff69b4;",
+        tailwindCss: "shadow-[6px_6px_0px_#ff69b4]"
+    },
+    {
+        id: "box-retro-pop-art",
+        category: "box",
+        name: "Retro Pop Art",
+        style: "border-2 border-black",
+        vanillaCss: "box-shadow: 8px 0px 0px #ff006e, 0px 8px 0px #3a86ff;",
+        tailwindCss: "shadow-[8px_0px_0px_#ff006e,0px_8px_0px_#3a86ff]"
+    },
+    {
+        id: "box-split-rgb-glitch",
+        category: "box",
+        name: "RGB Split Glitch",
+        style: "border border-black",
+        vanillaCss: "box-shadow: 4px 0px 0px #ff0000, -4px 0px 0px #00ffff;",
+        tailwindCss: "shadow-[4px_0px_0px_#ff0000,-4px_0px_0px_#00ffff]"
+    },
+    {
+        id: "box-offset-color-pop",
+        category: "box",
+        name: "Offset Color Pop",
+        style: "border border-black",
+        vanillaCss: "box-shadow: 6px 6px 0px #ff4d6d, 12px 12px 0px #4cc9f0, 18px 18px 0px #000;",
+        tailwindCss: "shadow-[6px_6px_0px_#ff4d6d,12px_12px_0px_#4cc9f0,18px_18px_0px_#000]"
+    },
+    {
+        id: "box-brutal-triple-stack",
+        category: "box",
+        name: "Brutal Triple Stack",
+        style: "border-2 border-black",
+        vanillaCss: "box-shadow: 5px 5px 0px #000, 10px 10px 0px #ffcc00, 15px 15px 0px #000;",
+        tailwindCss: "shadow-[5px_5px_0px_#000,10px_10px_0px_#ffcc00,15px_15px_0px_#000]"
+    },
+    {
+        id: "box-paper-lift-corner",
+        category: "box",
+        name: "Paper Lift Corner",
+        style: "border border-neutral-300",
+        vanillaCss: "box-shadow: 0 20px 15px -15px rgba(0,0,0,0.5);",
+        tailwindCss: "shadow-[0_20px_15px_-15px_rgba(0,0,0,0.5)]"
+    },
+    {
+        id: "box-soft-outline-01",
+        category: "box",
+        name: "Soft Outline",
+        style: "border border-neutral-300",
+        vanillaCss: "boxShadow: 5px 5px 0px 5px rgb(0,0,0)",
+        tailwindCss: "shadow-[0px_0px_2px_2px_rgb(211,211,211)]"
+    },
+    {
+        id: "box-subtle-edge-right-gray",
+        category: "box",
+        name: "Subtle Edge Right",
+        style: "border border-neutral-300",
+        vanillaCss: "boxShadow: 2px 0px 2px 2px rgb(211,211,211)",
+        tailwindCss: "shadow-[2px_0px_2px_2px_rgb(211,211,211)]"
+    },
+    {
+        id: "box-subtle-bottom-right-gray",
+        category: "box",
+        name: "Subtle Bottom Right",
+        style: "border border-neutral-300",
+        vanillaCss: "boxShadow:2px 2px 2px 2px rgb(211,211,211)",
+        tailwindCss: "shadow-[2px_2px_2px_2px_rgb(211,211,211)]"
     },
     {
         id: "box-soft-glow",
@@ -154,14 +306,6 @@ export const Shadows: Shadow[] = [
         style: "rounded-xl"
     },
     {
-        id: "box-3d-extrude-26",
-        category: "box",
-        name: "3D Extrude Stack",
-        vanillaCss: "box-shadow: 1px 1px 0px #ccc, 2px 2px 0px #bbb, 3px 3px 0px #aaa, 4px 4px 0px #999;",
-        tailwindCss: "shadow-[1px_1px_0px_#ccc,2px_2px_0px_#bbb,3px_3px_0px_#aaa,4px_4px_0px_#999]",
-        style: "border border-neutral-300"
-    },
-    {
         id: "box-3d-long-drop-21",
         category: "box",
         name: "3D Long Drop",
@@ -193,6 +337,7 @@ export const Shadows: Shadow[] = [
         tailwindCss: "shadow-[0_30px_60px_rgba(0,0,0,0.7)]",
         style: "rounded-xl"
     },
+
     {
         id: "text-strong-shadow",
         category: "text",
