@@ -577,6 +577,15 @@ export const Shadows: Shadow[] = [
         vanillaCss: "filter: drop-shadow(0 -10px 6px rgba(0,0,0,0.3))",
         tailwindCss: "drop-shadow-[0_-10px_6px_rgba(0,0,0,0.3)]",
         style: "border border-neutral-300 rounded-lg"
-    }
+    },
+  {
+    id: "drop-shadow-bold-mint",
+    category: "drop",
+    name: "Bold Mint Shadow",
+    vanillaCss: "filter: drop-shadow(6px 6px #10b981);",
+    tailwindCss: "drop-shadow-[6px_6px_#10b981]",
+    style: "border border-neutral-300 rounded-lg"
+},
+
 ]
 
